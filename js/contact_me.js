@@ -20,7 +20,7 @@ $(function() {
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
 
       var data = {
-        service_id: 'smtp_server',
+        service_id: 'rimorin@gmail.com',
         template_id: 'template_n5uxH0J1',
         user_id: 'user_S64QlZRZsvoEhAd4tjG7I',
         template_params: {
