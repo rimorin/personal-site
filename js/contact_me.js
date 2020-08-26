@@ -26,6 +26,7 @@ $(function() {
         template_params: {
           'reply_to': email,
           'to_name': 'John Eric',
+          'phone_no' : phone,
           'from_name': name,
           'message_html': message
         }
