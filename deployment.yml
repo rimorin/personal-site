@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ri-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ri-app
+  template:
+    metadata:
+      labels:
+        app: ri-app
+    spec:
+      containers:
+      - name: ri-container
+        image: rimorin/rimorin:latest
+      imagePullSecrets:
+        - name: regcred
+      
